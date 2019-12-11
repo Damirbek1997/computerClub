@@ -165,6 +165,7 @@
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:textSize="25sp"
+        android:onClick="logout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.93"
