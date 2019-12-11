@@ -27,9 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int MY_REQUEST_CODE = 7117;
     List<AuthUI.IdpConfig> providers;
-    EditText txtUsername, txtPaswword;
     Button btn_sign_out;
-    Button btn_sign_in;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,27 +57,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Handle sign in button
-        btn_sign_in = (Button)findViewById(R.id.btn_sign_in);
-        txtPaswword = (EditText)findViewById(R.id.password);
-        txtUsername = (EditText)findViewById(R.id.username);
 
-        btn_sign_in.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String username = txtUsername.getText().toString().trim();
-                String password = txtPaswword.getText().toString().trim();
-
-                if(TextUtils.isEmpty(username)) {
-                    Toast.makeText(MainActivity.this, "Please enter username", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(TextUtils.isEmpty(password)) {
-                    Toast.makeText(MainActivity.this, "Please enter password", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-            }
-        });
 
         // Init providers
         providers  = Arrays.asList(
