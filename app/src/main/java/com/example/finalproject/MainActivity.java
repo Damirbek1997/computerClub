@@ -11,21 +11,31 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_sign_out;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        // Handdle sign out button
-        btn_sign_out = (Button)findViewById(R.id.btn_sign_out);
     }
 
 
     public void logout(View view) {
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        finish();
+    }
+
+    public void view_all(View view) {
+        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        finish();
+    }
+
+    public void vip(View view) {
+        startActivity(new Intent(getApplicationContext(), VipActivity.class));
+        finish();
+    }
+
+    public void comfort(View view) {
+        startActivity(new Intent(getApplicationContext(), ComfortActivity.class));
         finish();
     }
 }
