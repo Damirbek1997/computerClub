@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "131151205889",
+    "firebase_url": "https://computerclub-e5515.firebaseio.com",
+    "project_id": "computerclub-e5515",
+    "storage_bucket": "computerclub-e5515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131151205889:android:8c428186cb42674ad1d200",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131151205889-fpp4nslbspi8g063rvu1i6fcd0mll6vn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finalproject",
+            "certificate_hash": "552479024d02a68df81f5c3bc324814470aaf7c8"
+          }
+        },
+        {
+          "client_id": "131151205889-ihqas4tdbti9vqgt1nbqlsilcmkt2sth.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA5iXTP-Uuktm8GGJm-v7NCpEMvNmQCwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "131151205889-ihqas4tdbti9vqgt1nbqlsilcmkt2sth.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
