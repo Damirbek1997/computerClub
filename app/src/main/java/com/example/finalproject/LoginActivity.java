@@ -20,8 +20,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
     EditText txtUsername, txtPaswword;
-    FirebaseAuth firebaseAuth;
-    ProgressBar progressBar;
+    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
     Button btn_sign_in;
 
     @Override
@@ -34,38 +34,51 @@ public class LoginActivity extends AppCompatActivity {
         txtPaswword = (EditText)findViewById(R.id.password);
         txtUsername = (EditText)findViewById(R.id.username);
         firebaseAuth = FirebaseAuth.getInstance();
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if(firebaseAuth.getCurrentUser() != null){
+                    startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                }
+            }
+        };
 
         btn_sign_in.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String username = txtUsername.getText().toString().trim();
-                String password = txtPaswword.getText().toString().trim();
-
-                if(TextUtils.isEmpty(username)) {
-                    Toast.makeText(LoginActivity.this, "Please enter username", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if(TextUtils.isEmpty(password)) {
-                    Toast.makeText(LoginActivity.this, "Please enter password", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                progressBar.setVisibility(View.VISIBLE);
-
-                // Authenticate the user
-
-                firebaseAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()) {
-                            Toast.makeText(LoginActivity.this, "Logged in", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                        } else {
-                            Toast.makeText(LoginActivity.this, "Incorrect dates", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
+                signIn();
             }
         });
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        firebaseAuth.addAuthStateListener(mAuthListener);
+    }
+
+    private void signIn() {
+        final String username = txtUsername.getText().toString().trim();
+        String password = txtPaswword.getText().toString().trim();
+
+        if(TextUtils.isEmpty(username)) {
+            Toast.makeText(LoginActivity.this, "Please enter username", Toast.LENGTH_SHORT).show();
+            return;
+        } else if(TextUtils.isEmpty(password)) {
+            Toast.makeText(LoginActivity.this, "Please enter password", Toast.LENGTH_SHORT).show();
+            return;
+        } else {
+
+            // Authenticate the user
+
+            firebaseAuth.signInWithEmailAndPassword(username, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (!task.isSuccessful())
+                        Toast.makeText(LoginActivity.this, "Incorrect credentials", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
     }
 }

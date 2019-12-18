@@ -62,715 +62,748 @@
         app:layout_constraintTop_toTopOf="@+id/computer_club" />
 
     <TextView
-        android:id="@+id/time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:text="00:00"
-        android:textColor="#0E9AB9"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/line_in_top" />
-
-    <TextView
         android:id="@+id/header_vip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="152dp"
         android:gravity="center_horizontal|top"
         android:text="VIP"
         android:textColor="#0E9AB9"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.464"
-        app:layout_constraintStart_toStartOf="@id/time"
+        app:layout_constraintHorizontal_bias="0.854"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/line_in_top" />
 
-    <Button
-        android:id="@+id/btn_vip_1"
-        android:layout_width="55dp"
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_1"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="22dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip1"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header_vip" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_2"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip2"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.104"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header_vip" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_3"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip3"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.137"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_2"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header_vip" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_4"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip4"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_5"-->
+<!--        app:layout_constraintHorizontal_bias="0.87"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header_vip" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_5"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:background="@drawable/vip5"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_6"-->
+<!--        app:layout_constraintHorizontal_bias="0.9"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header_vip" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_6"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/vip6"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header_vip" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_7"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="22dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip7"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_1" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_8"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip8"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.104"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_7"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_2" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_9"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip9"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.137"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_8"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_2" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_10"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip10"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_11"-->
+<!--        app:layout_constraintHorizontal_bias="0.87"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_4" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_11"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:background="@drawable/vip11"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_12"-->
+<!--        app:layout_constraintHorizontal_bias="0.9"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_5" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_12"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/vip12"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_6" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_13"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="22dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip13"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_7" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_14"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip14"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.104"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_13"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_8" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_15"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip15"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.137"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_14"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_9" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_16"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip16"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_17"-->
+<!--        app:layout_constraintHorizontal_bias="0.87"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_10" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_17"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:background="@drawable/vip17"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_18"-->
+<!--        app:layout_constraintHorizontal_bias="0.9"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_11" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_18"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/vip18"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_12" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_19"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="22dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip19"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_13" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_20"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip20"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.104"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_19"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_14" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_21"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip21"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.137"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_20"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_15" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_22"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip22"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_23"-->
+<!--        app:layout_constraintHorizontal_bias="0.87"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_16" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_23"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:background="@drawable/vip23"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_24"-->
+<!--        app:layout_constraintHorizontal_bias="0.9"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_17" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_24"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/vip24"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_18" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_25"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="22dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip25"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_19" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_26"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip26"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.104"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_25"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_20" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_27"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip27"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.137"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_26"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_21" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_28"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip28"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_29"-->
+<!--        app:layout_constraintHorizontal_bias="0.87"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_22" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_29"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:background="@drawable/vip29"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_30"-->
+<!--        app:layout_constraintHorizontal_bias="0.9"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_23" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_30"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/vip30"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_24" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_31"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="22dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip31"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_25" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_32"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip32"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.104"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_31"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_26" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_33"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip33"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.137"-->
+<!--        app:layout_constraintStart_toStartOf="@id/btn_vip_32"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_27" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_34"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="36dp"-->
+<!--        android:background="@drawable/vip34"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_35"-->
+<!--        app:layout_constraintHorizontal_bias="0.87"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_28" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_35"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="35dp"-->
+<!--        android:background="@drawable/vip35"-->
+<!--        android:onClick="buy"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/btn_vip_36"-->
+<!--        app:layout_constraintHorizontal_bias="0.9"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_29" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_vip_36"-->
+<!--        android:layout_width="55dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginStart="35dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:background="@drawable/vip36"-->
+<!--        android:onClick="buy"-->
+<!--        android:gravity="center_horizontal|top"-->
+<!--        android:text="00:00"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#484747"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/btn_vip_30" />-->
+
+    <View
+        android:id="@+id/view_menu"
+        android:layout_width="0dp"
         android:layout_height="55dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip1"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
+        android:background="@drawable/bg_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_vip" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/btn_vip_2"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip2"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
+        android:id="@+id/btn_menu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/btn_menu"
+        android:onClick="menu"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_1"
-        app:layout_constraintTop_toBottomOf="@+id/header_vip" />
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_menu"
+        app:layout_constraintVertical_bias="0.473" />
 
     <Button
-        android:id="@+id/btn_vip_3"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip3"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
+        android:id="@+id/btn_my_account"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/btn_my_account"
+        android:onClick="my_account"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_2"
-        app:layout_constraintTop_toBottomOf="@+id/header_vip" />
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="@id/btn_menu"
+        app:layout_constraintTop_toTopOf="@id/view_menu"
+        app:layout_constraintVertical_bias="0.5" />
 
-    <Button
-        android:id="@+id/btn_vip_4"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip4"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_5"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_vip" />
-
-    <Button
-        android:id="@+id/btn_vip_5"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/vip5"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_6"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_vip" />
-
-    <Button
-        android:id="@+id/btn_vip_6"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/vip6"
-        android:gravity="center_horizontal|top"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_id"
+        android:layout_width="416dp"
+        android:layout_height="447dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header_vip" />
-
-    <Button
-        android:id="@+id/btn_vip_7"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip7"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_1" />
-
-    <Button
-        android:id="@+id/btn_vip_8"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip8"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_7"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_2" />
-
-    <Button
-        android:id="@+id/btn_vip_9"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip9"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_8"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_2" />
-
-    <Button
-        android:id="@+id/btn_vip_10"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip10"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_11"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_4" />
-
-    <Button
-        android:id="@+id/btn_vip_11"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/vip11"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_12"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_5" />
-
-    <Button
-        android:id="@+id/btn_vip_12"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/vip12"
-        android:gravity="center_horizontal|top"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_6" />
-
-    <Button
-        android:id="@+id/btn_vip_13"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip13"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_7" />
-
-    <Button
-        android:id="@+id/btn_vip_14"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip14"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_13"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_8" />
-
-    <Button
-        android:id="@+id/btn_vip_15"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip15"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_14"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_9" />
-
-    <Button
-        android:id="@+id/btn_vip_16"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip16"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_17"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_10" />
-
-    <Button
-        android:id="@+id/btn_vip_17"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/vip17"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_18"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_11" />
-
-    <Button
-        android:id="@+id/btn_vip_18"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/vip18"
-        android:gravity="center_horizontal|top"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_12" />
-
-    <Button
-        android:id="@+id/btn_vip_19"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip19"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_13" />
-
-    <Button
-        android:id="@+id/btn_vip_20"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip20"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_19"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_14" />
-
-    <Button
-        android:id="@+id/btn_vip_21"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip21"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_20"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_15" />
-
-    <Button
-        android:id="@+id/btn_vip_22"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip22"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_23"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_16" />
-
-    <Button
-        android:id="@+id/btn_vip_23"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/vip23"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_24"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_17" />
-
-    <Button
-        android:id="@+id/btn_vip_24"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/vip24"
-        android:gravity="center_horizontal|top"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_18" />
-
-    <Button
-        android:id="@+id/btn_vip_25"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip25"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_19" />
-
-    <Button
-        android:id="@+id/btn_vip_26"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip26"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_25"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_20" />
-
-    <Button
-        android:id="@+id/btn_vip_27"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip27"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_26"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_21" />
-
-    <Button
-        android:id="@+id/btn_vip_28"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip28"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_29"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_22" />
-
-    <Button
-        android:id="@+id/btn_vip_29"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/vip29"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_30"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_23" />
-
-    <Button
-        android:id="@+id/btn_vip_30"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/vip30"
-        android:gravity="center_horizontal|top"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_24" />
-
-    <Button
-        android:id="@+id/btn_vip_31"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip31"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_25" />
-
-    <Button
-        android:id="@+id/btn_vip_32"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip32"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_31"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_26" />
-
-    <Button
-        android:id="@+id/btn_vip_33"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip33"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.137"
-        app:layout_constraintStart_toStartOf="@id/btn_vip_32"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_27" />
-
-    <Button
-        android:id="@+id/btn_vip_34"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="36dp"
-        android:background="@drawable/vip34"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_35"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_28" />
-
-    <Button
-        android:id="@+id/btn_vip_35"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/vip35"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        android:gravity="center_horizontal|top"
-        app:layout_constraintEnd_toEndOf="@id/btn_vip_36"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_29" />
-
-    <Button
-        android:id="@+id/btn_vip_36"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/vip36"
-        android:gravity="center_horizontal|top"
-        android:text="00:00"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_30" />
-
-    <Button
-        android:id="@+id/btn_buy"
-        android:layout_width="100dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/btn_buy_design"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="@id/btn_reserve"
-        app:layout_constraintHorizontal_bias="0.584"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_34" />
-
-    <Button
-        android:id="@+id/btn_reserve"
-        android:layout_width="100dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/btn_reserve_design"
-        android:textAllCaps="false"
-        android:textColor="#484747"
-        android:textSize="15sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_vip_36" />
-
+        app:layout_constraintTop_toTopOf="@+id/header_vip" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
